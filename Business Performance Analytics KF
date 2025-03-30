@@ -1,4 +1,5 @@
-WITH analisa AS (
+CREATE TABLE elite-name-455007-r2.kimia_farma.kf_analysis AS
+WITH analysis AS (
     SELECT 
         t.transaction_id,
         t.date,
@@ -36,4 +37,4 @@ WITH analisa AS (
         ON t.product_id = p.product_id
 )
 
-SELECT * FROM analisa;
+SELECT * FROM analysis;
